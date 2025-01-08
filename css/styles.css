@@ -26,7 +26,7 @@ html{
 
 section{
     height: calc(100vh - 86px);
-    min-height: fit-content
+    min-height: fit-content;
 }
 
 .section-centered{
@@ -233,14 +233,14 @@ section{
     justify-content: space-between;
 }
 
-.skills-boxes{
+.skills-boxes-div{
     display: flex;
     justify-content: space-between;
 }
 
-.languages{
+.skill-box{
     border: 1px solid rgb(82, 82, 82);
-    width: 45%;
+    width: 49%;
     height: 50vh;
     border-radius: 40px;
 }
@@ -253,8 +253,31 @@ section{
     margin: 1.5rem 0;
 }
 
-.frameworks{
-    border: 1px solid black;
-    width: 45%;
-    height: 50vh;
+.items-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 9.5rem);
+    justify-content: space-evenly;
+    gap: 2rem;
+    border: 1px solid lime;
+    padding: 0 4rem;
+}
+
+.item{
+    display: flex;
+    border: 1px solid blue;
+}
+
+.check{
+    width: 30px;
+    height: 30px;
+}
+
+.item-name{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* testing */
+.container-xxl{
+    max-width: 1400px;
 }
