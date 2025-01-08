@@ -1,0 +1,155 @@
+/* 86px is the hardcoded navbar height. Could later be changed to
+    find navbar height dynamically in js (if navbar height were to become dynamic) */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-padding-top: 86px;
+}
+
+/* body{
+    background-color: #91a5c4;
+} */
+
+/*  NAVBAR */
+.navbar-brand{
+    font-size: 2rem;
+}
+
+.nav-item{
+    font-size: 1.5rem;
+}
+
+/* SECTIONS */
+
+section{
+    min-height: calc(100vh - 86px);
+}
+
+.section-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PROFILE SECTION */
+
+.profile{
+    display: flex;
+    padding: 5rem 5rem;
+}
+
+.profile-pic-div{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    margin: auto 3rem;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    border: 10px solid black;
+}
+
+.profile-info-div{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.hello{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+}
+
+.name{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.description{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+    overflow: hidden;
+}
+
+.description .text{
+    position: relative;
+}
+
+.text:before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-left: 2px solid black;
+    animation: animate 4s steps(20) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.resume-div{
+    display: flex;
+}
+
+.resume{
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    border: 2px solid black;
+}
+
+.resume:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.social-media-icon{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+/* ABOUT SECTION */
+
+.about-div{
+    display: flex;
+
+    border: 1px solid lime;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
