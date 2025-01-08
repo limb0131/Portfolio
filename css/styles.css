@@ -25,7 +25,8 @@ html{
 /* SECTIONS */
 
 section{
-    min-height: calc(100vh - 86px);
+    height: calc(100vh - 86px);
+    min-height: fit-content
 }
 
 .section-centered{
@@ -164,6 +165,8 @@ section{
 .title{
     display: flex;
     justify-content: center;
+    font-size: 3.2rem;
+    font-weight: bold;
     margin: 5rem 0;
 }
 
@@ -196,8 +199,8 @@ section{
     text-align: center;
     width: 450px;
     height: 250px;
-    border: 1px solid black;
-    border-radius: 30px
+    border: 1px solid rgb(82, 82, 82);
+    border-radius: 30px;
 }
 
 .education-icon{
@@ -227,23 +230,31 @@ section{
 .skills-div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
+    justify-content: space-between;
 }
 
 .skills-boxes{
     display: flex;
-    justify-content: center;
-    width: 80%;
-    height: 100%;
-    border: 1px solid lime;
+    justify-content: space-between;
 }
 
 .languages{
-    border: 1px solid black;
+    border: 1px solid rgb(82, 82, 82);
+    width: 45%;
+    height: 50vh;
+    border-radius: 40px;
+}
+
+.lang-title{
+    display: flex;
+    justify-content: center;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    margin: 1.5rem 0;
 }
 
 .frameworks{
     border: 1px solid black;
+    width: 45%;
+    height: 50vh;
 }
