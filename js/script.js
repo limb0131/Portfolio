@@ -3,7 +3,7 @@ const typeText = $(".text");
 
 $(document).ready(function () {
   // jQuery code
-  Test();
+  //Test();
   typewriterText();
   setInterval(typewriterText, 12000);
 
